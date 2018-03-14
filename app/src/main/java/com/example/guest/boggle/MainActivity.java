@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     GridView gridView;
-
+    ArrayList<String> list = new ArrayList<String>();
 
     String[] letters = new String[]{
             "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Z"
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0;i<letters.length;i++)list.add(letters[i]);
         Collections.shuffle(list);
 
-        gridView.setAdapter(new BoggleAdapter(this, letters, list));
+        gridView.setAdapter(new BoggleAdapter(this, letters, list ));
 
 
 

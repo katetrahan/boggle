@@ -19,7 +19,7 @@ public class BoggleAdapter extends BaseAdapter {
     private ArrayList<String> mList;
 //    private String[] mVowels;
 
-    public BoggleAdapter(Context context, String[] letters, ArrayList<String> list) {
+    public BoggleAdapter(Context context, String[] letters,ArrayList<String> list) {
         this.mContext = context;
         this.mLetters = letters;
         this.mList = list;
@@ -59,7 +59,7 @@ public class BoggleAdapter extends BaseAdapter {
 
             //set values into views
 
-            letterView.setText(ArrayList<String>mList);
+            letterView.setText(mList[position]);
 //            letterView.setText(mVowels[position]);
 
         } else {
