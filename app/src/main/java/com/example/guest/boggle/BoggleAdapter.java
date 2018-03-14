@@ -59,7 +59,7 @@ public class BoggleAdapter extends BaseAdapter {
 
             //set values into views
 
-            letterView.setText(mList[position]);
+            letterView.setText(mList.get(position));
 //            letterView.setText(mVowels[position]);
 
         } else {

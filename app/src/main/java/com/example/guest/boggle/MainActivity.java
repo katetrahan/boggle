@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
 //        List<String> list = new ArrayList<String>();
 
 
-        for(int i = 0;i<letters.length;i++)list.add(letters[i]);
+        for(int i = 0;i<letters.length;i++){
+            list.add(letters[i]);
+        }
         Collections.shuffle(list);
 
         gridView.setAdapter(new BoggleAdapter(this, letters, list ));
